@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [failedTestCasesSuite]">
+  <listeners>
+    <listener class-name="ReTestFailedTests.MyTransformer"/>
+  </listeners>
+  <test name="retryFailedTTestCases(failed)">
+    <classes>
+      <class name="ReTestFailedTests.mytests">
+        <methods>
+          <include name="Test1"/>
+          <include name="Test2"/>
+        </methods>
+      </class> <!-- ReTestFailedTests.mytests -->
+    </classes>
+  </test> <!-- retryFailedTTestCases(failed) -->
+</suite> <!-- Failed suite [failedTestCasesSuite] -->
